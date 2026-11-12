@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">กระดุมเรียงเป็นรูปสามเหลี่ยม</title><desc id="d">แถวบนสุด 1 เม็ด เพิ่มแถวละ 1 เม็ด ใช้กระดุมรวม 15 โหลกับอีก 10 เม็ด</desc>
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1e2245"/><stop offset="100%" stop-color="#171a35"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="300" rx="18" fill="url(#fade)"/>
+<text x='24' y='30' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='14' fill='#eef1ff' text-anchor='start' font-weight='600' >กระดุมเรียงเป็นรูปสามเหลี่ยม</text>
+<circle cx='320.0' cy='56' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<text x='120' y='60' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >แถว 1</text>
+<text x='500' y='60' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >1 เม็ด</text>
+<circle cx='311.5' cy='75' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='328.5' cy='75' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<text x='120' y='79' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >แถว 2</text>
+<text x='500' y='79' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >2 เม็ด</text>
+<circle cx='303.0' cy='94' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='320.0' cy='94' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='337.0' cy='94' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<text x='120' y='98' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >แถว 3</text>
+<text x='500' y='98' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >3 เม็ด</text>
+<circle cx='294.5' cy='113' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='311.5' cy='113' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='328.5' cy='113' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='345.5' cy='113' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<text x='120' y='117' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >แถว 4</text>
+<text x='500' y='117' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >4 เม็ด</text>
+<circle cx='286.0' cy='132' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='303.0' cy='132' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='320.0' cy='132' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='337.0' cy='132' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='354.0' cy='132' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<text x='120' y='136' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >แถว 5</text>
+<text x='500' y='136' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >5 เม็ด</text>
+<circle cx='277.5' cy='151' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='294.5' cy='151' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='311.5' cy='151' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='328.5' cy='151' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='345.5' cy='151' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='362.5' cy='151' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<text x='120' y='155' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >แถว 6</text>
+<text x='500' y='155' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >6 เม็ด</text>
+<circle cx='269.0' cy='170' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='286.0' cy='170' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='303.0' cy='170' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='320.0' cy='170' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='337.0' cy='170' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='354.0' cy='170' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<circle cx='371.0' cy='170' r='6.5' fill='#8a7bff' opacity='0.8'/>
+<text x='120' y='174' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >แถว 7</text>
+<text x='500' y='174' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >7 เม็ด</text>
+<text x='320' y='203' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='20' fill='#a4abd6' text-anchor='middle' font-weight='400' >. . .</text>
+<circle cx='218.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='235.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='252.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='269.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='286.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='303.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='320.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='337.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='354.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='371.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='388.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='405.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<circle cx='422.0' cy='221' r='6.5' fill='#22d3a7' opacity='0.85'/>
+<text x='120' y='225' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#22d3a7' text-anchor='end' font-weight='600' >แถวล่างสุด</text>
+<text x='500' y='225' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#22d3a7' text-anchor='start' font-weight='600' >? เม็ด</text>
+<text x='24' y='288' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='12' fill='#a4abd6' text-anchor='start' font-weight='400' >ยอดบน 1 เม็ด เพิ่มแถวละ 1 เม็ด ใช้กระดุมทั้งหมด 15 โหล กับอีก 10 เม็ด</text>
+</svg>

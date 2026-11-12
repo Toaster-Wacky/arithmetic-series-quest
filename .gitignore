@@ -1,0 +1,15 @@
+# ไฟล์ระบบของ macOS ที่ Finder สร้างขึ้นเอง ไม่เกี่ยวกับโครงการ
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ไฟล์ชั่วคราวของเอดิเตอร์
+*.swp
+*~
+.vscode/
+.idea/
+
+# ล็อกและไฟล์ทดสอบ
+*.log
+_preview.html

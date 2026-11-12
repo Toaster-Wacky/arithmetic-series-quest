@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">การไต่ระดับของจรวด</title><desc id="d">วินาทีแรกจรวดไต่ขึ้น 45 ไมล์ วินาทีต่อไปไต่ได้น้อยลงวินาทีละ 5 ไมล์</desc>
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1e2245"/><stop offset="100%" stop-color="#171a35"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="300" rx="18" fill="url(#fade)"/>
+<text x='24' y='30' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='14' fill='#eef1ff' text-anchor='start' font-weight='600' >ระยะที่จรวดไต่ขึ้นได้ในแต่ละวินาที</text>
+<line x1='30' y1='262' x2='570' y2='262' stroke='#4cc9f0' stroke-width='2'/>
+<text x='578' y='256' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#4cc9f0' text-anchor='end' font-weight='400' >ระดับน้ำทะเล</text>
+<line x1='30' y1='70' x2='570' y2='70' stroke='#ffb340' stroke-width='1.5' stroke-dasharray='6 5'/>
+<text x='566' y='64' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#ffb340' text-anchor='end' font-weight='400' >ความสูงเป้าหมาย 210 ไมล์</text>
+<rect x='70' y='176.5' width='40' height='85.5' rx='5' fill='#8a7bff' opacity='0.55'/>
+<text x='90.0' y='169.5' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#eef1ff' text-anchor='middle' font-weight='600' >+45</text>
+<text x='90.0' y='278' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >วิ. 1</text>
+<rect x='132' y='186.0' width='40' height='76.0' rx='5' fill='#8a7bff' opacity='0.55'/>
+<text x='152.0' y='179.0' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#eef1ff' text-anchor='middle' font-weight='600' >+40</text>
+<text x='152.0' y='278' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >วิ. 2</text>
+<rect x='194' y='195.5' width='40' height='66.5' rx='5' fill='#8a7bff' opacity='0.55'/>
+<text x='214.0' y='188.5' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#eef1ff' text-anchor='middle' font-weight='600' >+35</text>
+<text x='214.0' y='278' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >วิ. 3</text>
+<rect x='256' y='205.0' width='40' height='57.0' rx='5' fill='#8a7bff' opacity='0.55'/>
+<text x='276.0' y='198.0' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#eef1ff' text-anchor='middle' font-weight='600' >+30</text>
+<text x='276.0' y='278' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >วิ. 4</text>
+<rect x='318' y='214.5' width='40' height='47.5' rx='5' fill='#8a7bff' opacity='0.55'/>
+<text x='338.0' y='207.5' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#eef1ff' text-anchor='middle' font-weight='600' >+25</text>
+<text x='338.0' y='278' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >วิ. 5</text>
+<text x='408' y='200' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='20' fill='#a4abd6' text-anchor='middle' font-weight='400' >. . .</text>
+<text x='408' y='278' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='13' fill='#22d3a7' text-anchor='middle' font-weight='600' >?</text>
+<path d='M 500 150 l 14 -34 l 14 34 l -7 0 l 0 14 l -14 0 l 0 -14 z' fill='#22d3a7' opacity='0.9'/>
+<path d='M 507 164 l 7 18 l 7 -18 z' fill='#ff6b81' opacity='0.8'/>
+<text x='24' y='52' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='12' fill='#a4abd6' text-anchor='start' font-weight='400' >วินาทีแรกไต่ขึ้น 45 ไมล์ จากนั้นไต่ได้น้อยลงวินาทีละ 5 ไมล์</text>
+</svg>

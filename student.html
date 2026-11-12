@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภารกิจอนุกรมเลขคณิต | หน้าจอนักเรียน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-student">
+
+  <!-- ตรวจจับการเปิดไฟล์ผิดวิธี: ES Modules ถูกบล็อกเมื่อเปิดแบบ file://
+       สคริปต์นี้เป็น classic script จึงทำงานได้แม้โมดูลอื่นจะโหลดไม่ได้ -->
+  <script>
+    (function () {
+      if (location.protocol !== 'file:') return;
+      document.addEventListener('DOMContentLoaded', function () {
+        document.body.innerHTML =
+          '<div class="file-warning">' +
+            '<h1>เปิดไฟล์ผิดวิธีครับ</h1>' +
+            '<p>หน้านี้เขียนด้วย <b>ES Modules</b> ซึ่งเบราว์เซอร์จะบล็อกเมื่อเปิดไฟล์โดยตรง ' +
+            'จากฮาร์ดดิสก์ (<code>file://</code>) เพราะเหตุผลด้านความปลอดภัย ' +
+            'จึงเห็นเป็นหน้าว่าง ๆ แบบนี้ — ไม่ใช่ว่าไฟล์เสียนะครับ</p>' +
+            '<h2>วิธีเปิดให้ถูกต้อง</h2>' +
+            '<p class="file-warning__step"><b>วิธีที่ 1 (ง่ายที่สุด)</b><br>' +
+            'กลับไปที่โฟลเดอร์เดียวกันนี้ แล้ว <b>ดับเบิลคลิกไฟล์</b> ' +
+            '<code>เริ่มเกม.command</code> ระบบจะเปิดเซิร์ฟเวอร์และเบราว์เซอร์ให้เอง</p>' +
+            '<p class="file-warning__step"><b>วิธีที่ 2</b><br>' +
+            'เปิด Terminal แล้วพิมพ์คำสั่งนี้<br>' +
+            '<code>cd "$HOME/Desktop/โจทย์ปัญหาอนุกรม เลขคณิต" &amp;&amp; python3 -m http.server 8000</code><br>' +
+            'จากนั้นเปิด <code>http://localhost:8000</code></p>' +
+            '<p class="file-warning__note">เมื่ออัปโหลดขึ้น GitHub Pages แล้วจะไม่มีปัญหานี้ ' +
+            'เพราะเป็นการเปิดผ่าน <code>https://</code> อยู่แล้ว</p>' +
+          '</div>';
+      });
+    })();
+  </script>
+
+  <!-- ============ หน้าจอที่ 1 : เลือกกลุ่ม ============ -->
+  <section id="screen-login" class="screen screen--active">
+    <div class="login">
+      <a class="back-link" href="index.html">กลับหน้าแรก</a>
+      <h1 class="login__title">เลือกกลุ่มของคุณ</h1>
+      <p class="login__hint">แต่ละกลุ่มใช้เครื่องเดียว เลือกกลุ่มเดิมได้หากต้องการเล่นต่อจากเดิม</p>
+      <div id="group-picker" class="group-picker"><!-- สร้างด้วย JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ หน้าจอที่ 2 : เล่นเกม ============ -->
+  <section id="screen-quest" class="screen">
+
+    <!-- แถบสถานะด้านบน -->
+    <header class="hud">
+      <div class="hud__group">
+        <span id="hud-badge" class="group-badge">1</span>
+        <div>
+          <strong id="hud-name">กลุ่มที่ 1</strong>
+          <span id="hud-progress-text" class="hud__sub">ข้อ 1 จาก 7</span>
+        </div>
+      </div>
+
+      <div class="hud__center">
+        <div class="progress-track"><div id="hud-progress-bar" class="progress-track__fill"></div></div>
+      </div>
+
+      <div class="hud__stats">
+        <div class="hud__stat">
+          <span class="hud__stat-label">พลังชีวิต</span>
+          <span id="hud-hearts" class="hud__hearts"></span>
+        </div>
+        <div class="hud__stat">
+          <span class="hud__stat-label">คะแนนรวม</span>
+          <span id="hud-score" class="hud__score">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="quest">
+
+      <!-- ซ้าย : โจทย์ + ภาพประกอบ -->
+      <article class="card card--question">
+        <div class="card__header">
+          <span id="q-badge" class="chip chip--level">ด่านที่ 1</span>
+          <span id="q-difficulty" class="chip chip--difficulty"></span>
+          <h2 id="q-title" class="card__title"></h2>
+        </div>
+
+        <figure class="figure">
+          <div id="q-figure-body" class="figure__body"></div>
+          <figcaption id="q-figure-caption" class="figure__caption"></figcaption>
+        </figure>
+
+        <div id="q-statement" class="statement"></div>
+      </article>
+
+      <!-- ขวา : บันไดคำถามย่อย (scaffolding) -->
+      <section class="ladder" aria-label="เส้นทางสู่คำตอบ">
+        <header class="ladder__header">
+          <h3 class="ladder__title">เส้นทางสู่คำตอบ</h3>
+          <span id="ladder-counter" class="ladder__counter"></span>
+        </header>
+
+        <ol id="step-list" class="step-list"><!-- สร้างด้วย JS --></ol>
+
+        <!-- กล่องเฉลยเต็ม แสดงเมื่อจบข้อ หรือเมื่อตอบผิดครบเกณฑ์ -->
+        <div id="solution-box" class="solution-box hidden">
+          <h4 class="solution-box__title"><span id="solution-icon"></span> แนวคิดและวิธีทำฉบับเต็ม</h4>
+          <div id="solution-body"></div>
+          <button id="btn-next" class="btn btn--primary btn--block"></button>
+        </div>
+      </section>
+
+    </main>
+  </section>
+
+  <!-- ============ หน้าจอที่ 3 : จบภารกิจ ============ -->
+  <section id="screen-finish" class="screen">
+    <div class="finish">
+      <span id="finish-icon" class="finish__icon"></span>
+      <h1 class="finish__title">จบภารกิจแล้ว</h1>
+      <p class="finish__subtitle">สรุปผลงานของ <strong id="finish-group"></strong></p>
+      <div class="finish__score">
+        <span id="finish-score">0</span>
+        <small>/ <span id="finish-max">700</span> คะแนน</small>
+      </div>
+      <table class="finish__table">
+        <thead><tr><th>ข้อ</th><th>ผลลัพธ์</th><th>ตอบผิด</th><th>คำใบ้</th><th>คะแนน</th></tr></thead>
+        <tbody id="finish-tbody"></tbody>
+      </table>
+      <a class="btn btn--ghost" href="index.html">กลับหน้าแรก</a>
+    </div>
+  </section>
+
+  <script type="module" src="js/student.js"></script>
+</body>
+</html>

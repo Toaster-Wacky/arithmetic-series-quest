@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภารกิจอนุกรมเลขคณิต | เลือกบทบาท</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-landing">
+
+  <!-- ตรวจจับการเปิดไฟล์ผิดวิธี: ES Modules ถูกบล็อกเมื่อเปิดแบบ file://
+       สคริปต์นี้เป็น classic script จึงทำงานได้แม้โมดูลอื่นจะโหลดไม่ได้ -->
+  <script>
+    (function () {
+      if (location.protocol !== 'file:') return;
+      document.addEventListener('DOMContentLoaded', function () {
+        document.body.innerHTML =
+          '<div class="file-warning">' +
+            '<h1>เปิดไฟล์ผิดวิธีครับ</h1>' +
+            '<p>หน้านี้เขียนด้วย <b>ES Modules</b> ซึ่งเบราว์เซอร์จะบล็อกเมื่อเปิดไฟล์โดยตรง ' +
+            'จากฮาร์ดดิสก์ (<code>file://</code>) เพราะเหตุผลด้านความปลอดภัย ' +
+            'จึงเห็นเป็นหน้าว่าง ๆ แบบนี้ — ไม่ใช่ว่าไฟล์เสียนะครับ</p>' +
+            '<h2>วิธีเปิดให้ถูกต้อง</h2>' +
+            '<p class="file-warning__step"><b>วิธีที่ 1 (ง่ายที่สุด)</b><br>' +
+            'กลับไปที่โฟลเดอร์เดียวกันนี้ แล้ว <b>ดับเบิลคลิกไฟล์</b> ' +
+            '<code>เริ่มเกม.command</code> ระบบจะเปิดเซิร์ฟเวอร์และเบราว์เซอร์ให้เอง</p>' +
+            '<p class="file-warning__step"><b>วิธีที่ 2</b><br>' +
+            'เปิด Terminal แล้วพิมพ์คำสั่งนี้<br>' +
+            '<code>cd "$HOME/Desktop/โจทย์ปัญหาอนุกรม เลขคณิต" &amp;&amp; python3 -m http.server 8000</code><br>' +
+            'จากนั้นเปิด <code>http://localhost:8000</code></p>' +
+            '<p class="file-warning__note">เมื่ออัปโหลดขึ้น GitHub Pages แล้วจะไม่มีปัญหานี้ ' +
+            'เพราะเป็นการเปิดผ่าน <code>https://</code> อยู่แล้ว</p>' +
+          '</div>';
+      });
+    })();
+  </script>
+  <main class="landing">
+    <header class="landing__header">
+      <p class="landing__eyebrow">คณิตศาสตร์ · ชั้นมัธยมศึกษาปีที่ 5</p>
+      <h1 class="landing__title">ภารกิจตะลุยโจทย์<br><span>อนุกรมเลขคณิต</span></h1>
+      <p class="landing__subtitle">
+        7 ด่าน · 6 กลุ่ม · พลังชีวิตกลุ่มละ 3 ดวงต่อข้อ<br>
+        แต่ละข้อซอยเป็นขั้นย่อย ระบบจะพาคิดทีละขั้นจนถึงคำตอบ
+      </p>
+    </header>
+
+    <div class="landing__choices">
+      <a class="role-card role-card--student" href="student.html">
+        <span class="role-card__icon" data-icon="student"></span>
+        <h2>เข้าสู่ระบบนักเรียน</h2>
+        <p>เลือกกลุ่มของคุณแล้วเริ่มภารกิจ</p>
+        <span class="role-card__cta">เริ่มเล่น <span data-icon="arrowRight"></span></span>
+      </a>
+
+      <a class="role-card role-card--teacher" href="teacher.html">
+        <span class="role-card__icon" data-icon="dashboard"></span>
+        <h2>กระดานสำหรับครู</h2>
+        <p>ติดตามความก้าวหน้าทุกกลุ่มแบบเรียลไทม์</p>
+        <span class="role-card__cta">เปิดกระดาน <span data-icon="arrowRight"></span></span>
+      </a>
+    </div>
+
+    <footer class="landing__footer">
+      <span id="connection-badge" class="badge badge--muted">กำลังตรวจสอบการเชื่อมต่อ…</span>
+    </footer>
+  </main>
+
+  <script type="module">
+    import { isFirebaseConfigured, APP_CONFIG } from './js/config.js';
+    import { icon } from './js/icons.js';
+
+    // วาดไอคอน SVG ลงในทุกจุดที่ประกาศไว้ด้วย data-icon (ไม่ใช้ emoji)
+    document.querySelectorAll('[data-icon]').forEach((node) => {
+      const size = node.classList.contains('role-card__icon') ? 38 : 16;
+      node.innerHTML = icon(node.dataset.icon, size);
+    });
+
+    // แสดงสถานะว่ากำลังใช้ Firebase จริง หรือโหมดออฟไลน์ (localStorage)
+    const badge = document.getElementById('connection-badge');
+    if (isFirebaseConfigured()) {
+      badge.className = 'badge badge--online';
+      badge.textContent = `เชื่อมต่อ Firebase แล้ว · ห้อง ${APP_CONFIG.roomCode}`;
+    } else {
+      badge.className = 'badge badge--offline';
+      badge.textContent = 'โหมดออฟไลน์ — ยังไม่ได้ใส่คีย์ใน js/config.js (ข้อมูลเก็บในเครื่องนี้เท่านั้น)';
+    }
+  </script>
+</body>
+</html>

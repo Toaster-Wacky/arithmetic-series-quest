@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">กองไม้ซุงวางซ้อนเป็นชั้น</title><desc id="d">ชั้นบนสุด 70 ท่อน ลึกลงมาเพิ่มชั้นละ 3 ท่อน ชั้นติดพื้น 376 ท่อน</desc>
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1e2245"/><stop offset="100%" stop-color="#171a35"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="300" rx="18" fill="url(#fade)"/>
+<text x='24' y='30' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='14' fill='#eef1ff' text-anchor='start' font-weight='600' >ภาคตัดขวางกองไม้ซุง</text>
+<rect x='291.3' y='56' width='57.4' height='13' rx='6.5' fill='#22d3a7' opacity='0.9'/>
+<text x='578' y='66' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#22d3a7' text-anchor='end' font-weight='600' >70 ท่อน</text>
+<text x='24' y='66' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#22d3a7' text-anchor='start' font-weight='600' >ชั้นบนสุด</text>
+<rect x='290.1' y='73' width='59.9' height='13' rx='6.5' fill='#8a7bff' opacity='0.5'/>
+<rect x='288.8' y='90' width='62.3' height='13' rx='6.5' fill='#8a7bff' opacity='0.5'/>
+<rect x='287.6' y='107' width='64.8' height='13' rx='6.5' fill='#8a7bff' opacity='0.5'/>
+<text x='320' y='142' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='20' fill='#a4abd6' text-anchor='middle' font-weight='400' >. . .</text>
+<text x='24' y='138' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#ffb340' text-anchor='start' font-weight='400' >ชั้นละ +3 ท่อน</text>
+<rect x='168.3' y='158' width='303.4' height='13' rx='6.5' fill='#8a7bff' opacity='0.5'/>
+<rect x='167.1' y='175' width='305.9' height='13' rx='6.5' fill='#8a7bff' opacity='0.5'/>
+<rect x='165.8' y='192' width='308.3' height='13' rx='6.5' fill='#ffb340' opacity='0.9'/>
+<text x='578' y='202' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#ffb340' text-anchor='end' font-weight='600' >376 ท่อน</text>
+<text x='24' y='202' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='11' fill='#ffb340' text-anchor='start' font-weight='600' >ชั้นติดพื้น</text>
+<line x1='30' y1='211' x2='570' y2='211' stroke='#343a6b' stroke-width='2'/>
+<text x='24' y='288' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='12' fill='#22d3a7' text-anchor='start' font-weight='600' >จำนวนชั้นทั้งหมด  ?  ชั้น</text>
+</svg>

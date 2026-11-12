@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">กราฟระยะทางของเจและโจ</title><desc id="d">เจเดินด้วยความเร็วคงที่และออกตัวก่อน ส่วนโจออกตามด้วยความเร็วที่เพิ่มขึ้นทุกชั่วโมง</desc>
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1e2245"/><stop offset="100%" stop-color="#171a35"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="300" rx="18" fill="url(#fade)"/>
+<text x='24' y='30' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='14' fill='#eef1ff' text-anchor='start' font-weight='600' >ระยะทางสะสมของเจและโจ</text>
+<line x1='70' y1='250' x2='540' y2='250' stroke='#343a6b' stroke-width='1.5'/>
+<line x1='70' y1='250' x2='70' y2='60' stroke='#343a6b' stroke-width='1.5'/>
+<text x='540' y='284' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='end' font-weight='400' >เวลาที่โจเดิน (ชม.)</text>
+<text x='28' y='52' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='start' font-weight='400' >ระยะทาง (กม.)</text>
+<text x='70.0' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >0</text>
+<text x='137.14285714285714' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >2</text>
+<text x='204.28571428571428' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >4</text>
+<text x='271.42857142857144' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >6</text>
+<text x='338.57142857142856' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >8</text>
+<text x='405.7142857142857' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >10</text>
+<text x='472.85714285714283' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >12</text>
+<text x='540.0' y='266' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='9' fill='#a4abd6' text-anchor='middle' font-weight='400' >14</text>
+<polyline points='70.0,225.6 103.6,214.7 137.1,203.9 170.7,193.0 204.3,182.1 237.9,171.3 271.4,160.4 305.0,149.6 338.6,138.7 372.1,127.9 405.7,117.0 439.3,106.1 472.9,95.3 506.4,84.4 540.0,73.6' fill='none' stroke='#4cc9f0' stroke-width='2.5'/>
+<line x1='70' y1='250' x2='70' y2='225.6' stroke='#4cc9f0' stroke-width='2.5' stroke-dasharray='4 3'/>
+<text x='78' y='236.42857142857142' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#4cc9f0' text-anchor='start' font-weight='400' >เจออกเดินก่อน 2¼ ชม.</text>
+<polyline points='70.0,250.0 103.6,244.6 137.1,237.8 170.7,229.6 204.3,220.1 237.9,209.3 271.4,197.1 305.0,183.5 338.6,168.6 372.1,152.3' fill='none' stroke='#22d3a7' stroke-width='2.5'/>
+<polyline points='372.1,152.3 422.5,125.5' fill='none' stroke='#22d3a7' stroke-width='2.5' stroke-dasharray='5 5' opacity='0.6'/>
+<text x='261.3571428571429' y='231.0' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#22d3a7' text-anchor='start' font-weight='400' >โจ · เร่งขึ้นทุกชั่วโมง</text>
+<text x='251.2857142857143' y='136.0' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#4cc9f0' text-anchor='start' font-weight='400' >เจ · 4 กม./ชม. คงที่</text>
+<circle cx='472.9' cy='95.3' r='13' fill='none' stroke='#ffb340' stroke-width='1.5' stroke-dasharray='4 3'/>
+<text x='472.85714285714283' y='100.28571428571428' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='15' fill='#ffb340' text-anchor='middle' font-weight='700' >?</text>
+<text x='24' y='286' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='12' fill='#a4abd6' text-anchor='start' font-weight='400' >ชั่วโมงแรกโจเดินได้ 2 กม. และเร็วขึ้นชั่วโมงละ ½ กม.</text>
+</svg>

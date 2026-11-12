@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภารกิจอนุกรมเลขคณิต | กระดานครู</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-teacher">
+
+  <!-- ตรวจจับการเปิดไฟล์ผิดวิธี: ES Modules ถูกบล็อกเมื่อเปิดแบบ file://
+       สคริปต์นี้เป็น classic script จึงทำงานได้แม้โมดูลอื่นจะโหลดไม่ได้ -->
+  <script>
+    (function () {
+      if (location.protocol !== 'file:') return;
+      document.addEventListener('DOMContentLoaded', function () {
+        document.body.innerHTML =
+          '<div class="file-warning">' +
+            '<h1>เปิดไฟล์ผิดวิธีครับ</h1>' +
+            '<p>หน้านี้เขียนด้วย <b>ES Modules</b> ซึ่งเบราว์เซอร์จะบล็อกเมื่อเปิดไฟล์โดยตรง ' +
+            'จากฮาร์ดดิสก์ (<code>file://</code>) เพราะเหตุผลด้านความปลอดภัย ' +
+            'จึงเห็นเป็นหน้าว่าง ๆ แบบนี้ — ไม่ใช่ว่าไฟล์เสียนะครับ</p>' +
+            '<h2>วิธีเปิดให้ถูกต้อง</h2>' +
+            '<p class="file-warning__step"><b>วิธีที่ 1 (ง่ายที่สุด)</b><br>' +
+            'กลับไปที่โฟลเดอร์เดียวกันนี้ แล้ว <b>ดับเบิลคลิกไฟล์</b> ' +
+            '<code>เริ่มเกม.command</code> ระบบจะเปิดเซิร์ฟเวอร์และเบราว์เซอร์ให้เอง</p>' +
+            '<p class="file-warning__step"><b>วิธีที่ 2</b><br>' +
+            'เปิด Terminal แล้วพิมพ์คำสั่งนี้<br>' +
+            '<code>cd "$HOME/Desktop/โจทย์ปัญหาอนุกรม เลขคณิต" &amp;&amp; python3 -m http.server 8000</code><br>' +
+            'จากนั้นเปิด <code>http://localhost:8000</code></p>' +
+            '<p class="file-warning__note">เมื่ออัปโหลดขึ้น GitHub Pages แล้วจะไม่มีปัญหานี้ ' +
+            'เพราะเป็นการเปิดผ่าน <code>https://</code> อยู่แล้ว</p>' +
+          '</div>';
+      });
+    })();
+  </script>
+
+  <header class="dash-header">
+    <div>
+      <a class="back-link" href="index.html">กลับหน้าแรก</a>
+      <h1 class="dash-header__title">กระดานติดตามผล · อนุกรมเลขคณิต</h1>
+      <p class="dash-header__meta">
+        ห้อง <strong id="meta-room">—</strong> ·
+        <span id="meta-mode" class="badge badge--muted">กำลังเชื่อมต่อ…</span>
+      </p>
+    </div>
+    <div class="dash-header__actions">
+      <button id="btn-reset-all" class="btn btn--danger">รีเซ็ตทั้งห้อง</button>
+    </div>
+  </header>
+
+  <!-- แถบสรุปภาพรวม -->
+  <section class="kpi-row">
+    <div class="kpi"><span class="kpi__label">กลุ่มที่เริ่มแล้ว</span><strong id="kpi-active">0 / 6</strong></div>
+    <div class="kpi"><span class="kpi__label">จบภารกิจ</span><strong id="kpi-finished">0</strong></div>
+    <div class="kpi"><span class="kpi__label">ข้อที่สะดุดมากที่สุด</span><strong id="kpi-hardest">—</strong></div>
+    <div class="kpi"><span class="kpi__label">คะแนนเฉลี่ย</span><strong id="kpi-average">0</strong></div>
+  </section>
+
+  <!-- ตารางภาพรวม กลุ่ม × ข้อ -->
+  <section class="panel">
+    <h2 class="panel__title">ภาพรวมความก้าวหน้า</h2>
+    <div class="matrix-scroll">
+      <table class="matrix">
+        <thead id="matrix-head"></thead>
+        <tbody id="matrix-body"></tbody>
+      </table>
+    </div>
+    <ul class="legend">
+      <li><span class="dot dot--solved"></span> เดินครบทุกขั้น (ตัวเลข = คะแนนที่ได้)</li>
+      <li><span class="dot dot--revealed"></span> ระบบเฉลยให้</li>
+      <li><span class="dot dot--current"></span> กำลังทำ (ตัวเลข = ขั้นที่ / ขั้นทั้งหมด)</li>
+      <li><span class="dot dot--idle"></span> ยังไม่ถึง</li>
+      <li><span class="dot dot--wrong"></span> ตัวเลขมุมขวาบน = จำนวนครั้งที่ตอบผิด</li>
+    </ul>
+  </section>
+
+  <!-- การ์ดรายกลุ่ม พร้อมรายการคำตอบที่ผิด -->
+  <section class="panel">
+    <h2 class="panel__title">รายละเอียดรายกลุ่ม</h2>
+    <div id="group-grid" class="group-grid"></div>
+  </section>
+
+  <script type="module" src="js/teacher.js"></script>
+</body>
+</html>

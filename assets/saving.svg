@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">กราฟเงินออมรายเดือน</title><desc id="d">แท่งกราฟเงินออม 12 เดือน เริ่ม 800 บาท เพิ่มเดือนละ 500 บาท</desc>
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1e2245"/><stop offset="100%" stop-color="#171a35"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="300" rx="18" fill="url(#fade)"/>
+<text x='24' y='30' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='14' fill='#eef1ff' text-anchor='start' font-weight='600' >ยอดเงินออมรายเดือน พ.ศ. 2567</text>
+<rect x='42' y='226.4' width='34' height='21.6' rx='4' fill='#22d3a7' opacity='0.9'/>
+<text x='59.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >ม.ค.</text>
+<text x='59.0' y='219.4126984126984' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#22d3a7' text-anchor='middle' font-weight='600' >800</text>
+<rect x='86' y='212.9' width='34' height='35.1' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='103.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >ก.พ.</text>
+<text x='103.0' y='205.92063492063494' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='600' >1,300</text>
+<rect x='130' y='199.4' width='34' height='48.6' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='147.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >มี.ค.</text>
+<rect x='174' y='185.9' width='34' height='62.1' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='191.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >เม.ย.</text>
+<rect x='218' y='172.4' width='34' height='75.6' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='235.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >พ.ค.</text>
+<rect x='262' y='159.0' width='34' height='89.0' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='279.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >มิ.ย.</text>
+<rect x='306' y='145.5' width='34' height='102.5' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='323.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >ก.ค.</text>
+<rect x='350' y='132.0' width='34' height='116.0' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='367.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >ส.ค.</text>
+<rect x='394' y='118.5' width='34' height='129.5' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='411.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >ก.ย.</text>
+<rect x='438' y='105.0' width='34' height='143.0' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='455.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >ต.ค.</text>
+<rect x='482' y='91.5' width='34' height='156.5' rx='4' fill='#8a7bff' opacity='0.55'/>
+<text x='499.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >พ.ย.</text>
+<rect x='526' y='78.0' width='34' height='170.0' rx='4' fill='#22d3a7' opacity='0.9'/>
+<text x='543.0' y='264' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#a4abd6' text-anchor='middle' font-weight='400' >ธ.ค.</text>
+<text x='543.0' y='71.0' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='10' fill='#22d3a7' text-anchor='middle' font-weight='600' >?</text>
+<line x1='30' y1='248' x2='570' y2='248' stroke='#343a6b' stroke-width='1.5'/>
+<text x='24' y='282' font-family='IBM Plex Sans Thai, Segoe UI, sans-serif' font-size='12' fill='#a4abd6' text-anchor='start' font-weight='400' >เดือนแรก 800 บาท เดือนถัดไปออมเพิ่มจากเดิมอีก 500 บาท</text>
+</svg>
