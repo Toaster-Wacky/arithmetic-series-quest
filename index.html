@@ -63,9 +63,6 @@
       </a>
     </div>
 
-    <footer class="landing__footer">
-      <span id="connection-badge" class="badge badge--muted">กำลังตรวจสอบการเชื่อมต่อ…</span>
-    </footer>
   </main>
 
   <script type="module">
@@ -78,15 +75,8 @@
       node.innerHTML = icon(node.dataset.icon, size);
     });
 
-    // แสดงสถานะว่ากำลังใช้ Firebase จริง หรือโหมดออฟไลน์ (localStorage)
-    const badge = document.getElementById('connection-badge');
-    if (isFirebaseConfigured()) {
-      badge.className = 'badge badge--online';
-      badge.textContent = `เชื่อมต่อ Firebase แล้ว · ห้อง ${APP_CONFIG.roomCode}`;
-    } else {
-      badge.className = 'badge badge--offline';
-      badge.textContent = 'โหมดออฟไลน์ — ยังไม่ได้ใส่คีย์ใน js/config.js (ข้อมูลเก็บในเครื่องนี้เท่านั้น)';
-    }
+
+
   </script>
 </body>
 </html>
