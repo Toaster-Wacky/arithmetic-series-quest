@@ -296,7 +296,7 @@ export const QUESTIONS = [
       {
         label: 'ขั้นที่ 3',
         goal: 'แก้สมการหาจำนวนแถว',
-        prompt: 'แถวบนสุด 1 เม็ด เพิ่มแถวละ 1 เม็ด ⇒ S<sub>n</sub> = <sup>n(n + 1)</sup>⁄<sub>2</sub> = 190 นั่นคือ n(n + 1) = 380 — จงหา n',
+        prompt: 'แถวบนสุด 1 เม็ด เพิ่มแถวละ 1 เม็ด ⇒ S<sub>n</sub> = <span style="display:inline-flex;flex-direction:column;text-align:center;vertical-align:-0.55em;margin:0 .18em;line-height:1.25"><span style="border-bottom:1.4px solid currentColor;padding:0 .3em">n(n + 1)</span><span style="padding:0 .3em">2</span></span> = 190 นั่นคือ n(n + 1) = 380 — จงหา n',
         type: 'number',
         value: 19,
         unit: 'แถว',
